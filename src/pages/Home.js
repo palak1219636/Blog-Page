@@ -1,13 +1,10 @@
 import React, { useEffect, useState, useRef } from "react";
 import styled from "styled-components";
 import SinglePost from "../components/SinglePost";
-// import axios from "axios";
-// import dataItem from "../data";
 export default function Home() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  //   const postRef = useRef();
   useEffect(() => {
     console.log("fetch");
 
